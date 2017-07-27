@@ -67,6 +67,7 @@ a {
 
 .event-info-container {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
 }
 
@@ -184,7 +185,11 @@ footer {
   padding: 10px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 550px) {
+  .event-info-container {
+    flex-direction: row;
+  }
+
   .collapsible-panel-inner {
     display: flex;
   }
@@ -215,11 +220,13 @@ footer {
   .attendee-profiles-container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, calc(50% - 10px));
     margin-bottom: 20px;
   }
 
-  .project {
+  .projects-container .collapsible-panel,
+  .sponsors-container .collapsible-panel,
+  .attendee-profiles-container .collapsible-panel {
     margin-bottom: 0;
   }
 }
@@ -228,7 +235,7 @@ footer {
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, calc(33.3333% - 10px));
     grid-gap: 10px;
   }
 }
