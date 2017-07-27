@@ -190,22 +190,6 @@ footer {
     flex-direction: row;
   }
 
-  .collapsible-panel-inner {
-    display: flex;
-  }
-
-  .collapsible-panel-content {
-    display: block;
-  }
-
-  .collapsible-panel .header {
-    cursor: default;
-  }
-
-  .collapsible-panel .header .toggler {
-    display: none;
-  }
-
   .hero {
     font-size: 1.25em;
   }
@@ -225,6 +209,22 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .collapsible-panel-inner {
+    display: flex;
+  }
+
+  .collapsible-panel-content {
+    display: block;
+  }
+
+  .collapsible-panel .header {
+    cursor: default;
+  }
+
+  .collapsible-panel .header .toggler {
+    display: none;
+  }
+
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
