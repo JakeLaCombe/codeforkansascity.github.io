@@ -215,19 +215,12 @@ footer {
     margin-right: 20px;
   }
 
-  .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, calc(50% - 10px));
     margin-bottom: 20px;
-  }
-
-  .projects-container .collapsible-panel,
-  .sponsors-container .collapsible-panel,
-  .attendee-profiles-container .collapsible-panel {
-    margin-bottom: 0;
   }
 }
 
@@ -237,5 +230,9 @@ footer {
   .attendee-profiles-container {
     grid-template-columns: repeat(3, calc(33.3333% - 10px));
     grid-gap: 10px;
+  }
+
+  .projects-container .collapsible-panel {
+    margin-bottom: 0;
   }
 }
