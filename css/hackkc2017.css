@@ -186,30 +186,6 @@ footer {
 }
 
 @media (min-width: 550px) {
-  .event-info-container {
-    flex-direction: row;
-  }
-
-  .hero {
-    font-size: 1.25em;
-  }
-
-  .hero-event-date > * {
-    display: inline-block;
-    margin-right: 20px;
-  }
-
-  .projects-container,
-  .sponsors-container,
-  .attendee-profiles-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, calc(50% - 10px));
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 768px) {
   .collapsible-panel-inner {
     display: flex;
   }
@@ -226,14 +202,38 @@ footer {
     display: none;
   }
 
+  .event-info-container {
+    flex-direction: row;
+  }
+
+  .hero {
+    font-size: 1.25em;
+  }
+
+  .hero-event-date > * {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .projects-container .collapsible-panel {
+    margin-bottom: 0;
+  }
+
+  .projects-container,
+  .sponsors-container,
+  .attendee-profiles-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
     grid-template-columns: repeat(3, calc(33.3333% - 10px));
     grid-gap: 10px;
-  }
-
-  .projects-container .collapsible-panel {
-    margin-bottom: 0;
   }
 }
