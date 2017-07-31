@@ -199,6 +199,7 @@ footer {
     margin-right: 20px;
   }
 
+  .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
     display: grid;
