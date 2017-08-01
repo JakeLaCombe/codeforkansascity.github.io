@@ -68,11 +68,16 @@ a {
 }
 
 .event-info-container {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .event-details {
@@ -94,10 +99,13 @@ a {
 .collapsible-panel {
   background: #fff;
   color: #000;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 10px;
 }
 
@@ -111,7 +119,9 @@ a {
   margin-bottom: 0;
   background: #ffffff;
   border-bottom: #eee solid 1px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
@@ -119,46 +129,61 @@ a {
 
 .collapsible-panel .header .toggler {
   margin-left: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .collapsible-panel-inner {
   display: none;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .collapsible-panel-content {
   display: none;
   padding: 10px;
-  -ms-flex: 1;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .collapsible-panel-footer {
   background: #f2f2f2;
   padding: 10px;
   border-top: #eee solid 1px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  align-items: center;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .collapsible-panel-extended .collapsible-panel-inner {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .toggler {
+  -webkit-transition: -webkit-transform 0.25s linear;
+  transition: -webkit-transform 0.25s linear;
+  -o-transition: transform 0.25s linear;
   transition: transform 0.25s linear;
+  transition: transform 0.25s linear, -webkit-transform 0.25s linear;
 }
 
 .collapsible-panel-extended .toggler {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .collapsible-panel-content {
@@ -179,12 +204,19 @@ a {
 
 .sponsors-container a {
   padding: 20px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .attendee-profiles figure {
@@ -206,6 +238,7 @@ footer {
 
 @media (min-width: 550px) {
   .collapsible-panel-inner {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
@@ -223,8 +256,10 @@ footer {
   }
 
   .event-info-container {
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .hero {
@@ -243,10 +278,7 @@ footer {
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-gap: 10px;
-    -ms-grid-template-columns: repeat(2, calc(50% - 10px));
     grid-gap: 10px;
     grid-template-columns: repeat(2, calc(50% - 10px));
     margin-bottom: 20px;
@@ -257,7 +289,6 @@ footer {
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
-    -ms-grid-template-columns: repeat(3, calc(33.3333% - 10px));
     grid-template-columns: repeat(3, calc(33.3333% - 10px));
   }
 }
