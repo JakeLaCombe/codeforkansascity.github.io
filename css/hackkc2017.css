@@ -84,7 +84,7 @@ a {
 }
 
 .projects {
-  background: #106B6D;
+  background: #274242;
   color: #ffffff;
   padding-top: 20px;
 }
@@ -105,7 +105,7 @@ a {
   padding: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  background: #f4f2f4;
+  background: #ffffff;
   border-bottom: #eee solid 1px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   display: flex;
