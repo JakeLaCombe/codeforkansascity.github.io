@@ -9,13 +9,10 @@ a {
 }
 
 .hero {
-  background-image: url('../images/ndoch2016group.png');
+  background-image: url('../images/ndoch2016working.png');
   background-size: cover;
   background-position: center;
   padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .responsive-img {
@@ -29,15 +26,25 @@ a {
 
 .hero-event-overview {
   margin-top: 25%;
+  padding: 10px 20px;
+  background: #000;
 }
 
 .hero-event-date {
   margin-top: 10px;
 }
 
+.eventbrite-registration {
+  margin-top: 10px;
+}
+
 .hero-event-date > * {
   margin-right: 0;
-  display: block;
+  margin-bottom: 10px;
+  display: table;
+  background: #565456;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hero a {
