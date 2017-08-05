@@ -278,8 +278,10 @@ footer {
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
+    display: -ms-grid;
     display: grid;
     grid-gap: 10px;
+    -ms-grid-columns: calc(50% - 10px)[2];
     grid-template-columns: repeat(2, calc(50% - 10px));
     margin-bottom: 20px;
   }
@@ -289,6 +291,7 @@ footer {
   .projects-container,
   .sponsors-container,
   .attendee-profiles-container {
+    -ms-grid-columns: calc(50% - 10px)[2];
     grid-template-columns: repeat(3, calc(33.3333% - 10px));
   }
 }
