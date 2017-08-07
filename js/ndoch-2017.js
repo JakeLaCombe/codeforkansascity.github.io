@@ -3,5 +3,10 @@ $(document).on('click', '.collapsible-panel .header', function() {
 });
 
 $(document).ready(function() {
-    $('.interactive-tooltip').tooltipster({theme: 'tooltipster-light'});
+    $('.interactive-tooltip').tooltipster({
+      theme: 'tooltipster-light',
+      trigger: 'click',
+      contentAsHTML: true,
+      maxWidth: 500,
+    });
 });
