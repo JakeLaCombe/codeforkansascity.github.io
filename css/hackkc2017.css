@@ -193,6 +193,10 @@ a {
   color: #595759;
 }
 
+.attendee-profiles figure img {
+  cursor: pointer;
+}
+
 .attendee-profiles figure figcaption {
   display: none;
 }
