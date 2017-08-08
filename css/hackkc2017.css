@@ -187,6 +187,13 @@ a {
   justify-content: center;
 }
 
+.content-panel q {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .attendee-profiles figure {
   text-align: center;
   padding: 20px;
