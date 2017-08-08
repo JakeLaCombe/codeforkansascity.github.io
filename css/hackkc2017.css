@@ -15,6 +15,11 @@ a {
   padding-top: 40px;
 }
 
+.hero .container {
+  background: rgba(0, 0, 0, 0.75);
+  padding-top: 10px;
+  border-radius: 10px;
+}
 .responsive-img {
   max-width: 100%;
 }
@@ -42,7 +47,6 @@ a {
   margin-right: 0;
   margin-bottom: 10px;
   display: table;
-  background: #565456;
   padding-left: 10px;
   padding-right: 10px;
 }
